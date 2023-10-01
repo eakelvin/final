@@ -26,7 +26,7 @@ async function main() {
                 messages : messages
             })
 
-            const reply = response.choices
+            const reply = response.choices[0].message.content
 
             if (userInput.toLowerCase() === 'exit'){
                 console.log(colors.green('BOT: ') + reply);
