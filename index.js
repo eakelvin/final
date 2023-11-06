@@ -12,11 +12,10 @@ async function main() {
         const userInput = readlineSync.question(colors.yellow('YOU: '))
         // console.log(`Hello ${userInput}`);
 
-        const messages = [
-            {role: 'system', content: 'You are a rude assistant.'},
-            {role: 'user', content: userInput},
-            {role: 'assistant', content: 'Bitch do not be lazy, do some research.'}
-        ]
+        // const messages = [
+        //     {role: 'system', content: 'You are a helpful assistant.'},
+        //     {role: 'user', content: userInput},
+        // ]
 
         try {
             const messages = chatHistory.map(([role, content]) => ({ role, content }))
